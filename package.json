@@ -1,6 +1,6 @@
 {
   "name": "@tiaanduplessis/assert",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "The most basic assertion library",
   "license": "MIT",
   "repository": {
@@ -21,9 +21,8 @@
     "build": "bili",
     "start": "npm run test",
     "precommit": "npm test",
-    "prepublish": "npm run build",
-    "pretest": "npm run format",
-    "publish": "npm publish --access=public"
+    "prepare": "npm run build",
+    "pretest": "npm run format"
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "babel": {
@@ -40,6 +39,5 @@
     "jest": "^21.0.2",
     "prettier-standard": "^6.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
