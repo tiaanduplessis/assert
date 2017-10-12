@@ -22,7 +22,8 @@
     "start": "npm run test",
     "precommit": "npm test",
     "prepublish": "npm run build",
-    "pretest": "npm run format"
+    "pretest": "npm run format",
+    "publish": "npm publish --access=public"
   },
   "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
   "babel": {
