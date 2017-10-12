@@ -1,0 +1,44 @@
+{
+  "name": "@tiaanduplessis/assert",
+  "version": "1.0.0",
+  "description": "The most basic assertion library",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/assert",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/assert",
+  "bugs": "https://github.com/tiaanduplessis/assert",
+  "main": "dist/assert.js",
+  "browser": "dist/assert.js",
+  "module": "dist/assert.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "format": "prettier-standard 'src/**/*.js'",
+    "build": "bili",
+    "start": "npm run test",
+    "precommit": "npm test",
+    "prepublish": "npm run build",
+    "pretest": "npm run format"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "babel": {
+    "presets": [
+      [
+        "env"
+      ]
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "bili": "^0.18.1",
+    "husky": "^0.14.3",
+    "jest": "^21.0.2",
+    "prettier-standard": "^6.0.0"
+  },
+  "dependencies": {
+  }
+}
